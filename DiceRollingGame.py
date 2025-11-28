@@ -16,6 +16,7 @@ def DiceRollingGame():
             DiceRollingGame()
         else:
             break
+        break
 
 
 DiceRollingGame()
