@@ -8,8 +8,8 @@ def GenerateRandomNumber():
         print(f"({random.randint(1, 6)}, {random.randint(1, 6)})")
 
 
-def DiceRollingGame(offset):
-    while offset != 0:
+def DiceRollingGame():
+    while True:
         GenerateRandomNumber()
         ShouldRollAgain = input("Roll the dice? (y/n): ")
         if ShouldRollAgain.lower() == "y":
@@ -18,4 +18,4 @@ def DiceRollingGame(offset):
             break
 
 
-DiceRollingGame(2)
+DiceRollingGame()
