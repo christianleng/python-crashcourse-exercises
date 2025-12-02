@@ -1,5 +1,7 @@
 n = 5
 for i in range(n):
-    for y in range(i+1):
-        print("#", end='')
-    print('')
+    for j in range(n - i - 1):
+        print(" ", end="")
+    for k in range(i * 2 + 1):
+        print("#", end="")
+    print()
