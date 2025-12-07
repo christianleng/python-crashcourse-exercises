@@ -1,27 +1,8 @@
-TEST = [{"a": "1"}, {"b": "2"}, {"c": "3"}]
+arr_list: list[int] = [12, 2, 1, 4, 6, 43]
 
+arr_list_add = [n*2 for n in arr_list if n*2 >= 12]
+print(arr_list_add)
 
-def testWhile():
-    index = 0
-
-    while index < len(TEST):
-        current_item = TEST[index]
-        expected_value = list(current_item.values())[0]
-        expected_keys = list(current_item.keys())[0]
-
-        print(f"CURRENT_ITEM ::=> {current_item}")
-        print(f"CURRENT_VALUE ::=> {expected_value}")
-        print(f"CURRENT_KEYS ::=> {expected_keys}")
-
-        correctNb = input("Give me the correct number: ")
-
-        if correctNb == expected_value:
-            print("\nCorrect!")
-            index += 1
-        else:
-            print("Not correct!")
-
-    print("All correct!")
-
-
-testWhile()
+arr_list_string: list[str] = ['bonjour', 'bonsoir', 'good', 'name']
+arr_list_string_add = [n.upper() for n in arr_list_string if len(n) > 5]
+print(arr_list_string_add)
